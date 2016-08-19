@@ -36,4 +36,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgements
 
-- Styles for the app were made by [vidaaudrey](https://github.com/vidaaudrey/001-Angular-Material-Todo-App).
+- [todo.css](https://github.com/danielzy95/MEANToDo/blob/master/front-end/todo.css) was made by [vidaaudrey](https://github.com/vidaaudrey/001-Angular-Material-Todo-App).
