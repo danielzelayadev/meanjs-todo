@@ -24,7 +24,7 @@ $ mongod
 /back-end $ npm start
 ```
 
-### Running the App
+### Run the App
 
 ```
 /front-end $ browser-sync start --server
