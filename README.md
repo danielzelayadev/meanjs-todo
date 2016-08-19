@@ -24,7 +24,7 @@ $ mongod
 /back-end $ npm start
 ```
 
-### Running the App
+### Run the App
 
 ```
 /front-end $ browser-sync start --server
@@ -34,6 +34,6 @@ $ mongod
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/danielzy95/MEANToDo/blob/master/LICENSE) file for details.
 
-## Acknowledgments
+## Acknowledgements
 
 - Styles for the app were made by [vidaaudrey](https://github.com/vidaaudrey/001-Angular-Material-Todo-App).
