@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html ng-app="ToDo">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>ToDo FullStack</title>
+		<link rel="icon" href="svg/menu.svg">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css">
+		<link rel="stylesheet" href="todo.css">
+	</head>
+	<body ng-controller="ToDoCtrl as vm">
+	<md-toolbar layout="row" layout-align="center">
+      <md-button class="menu" ng-click="vm.toggleTodo()" aria-label="Show todo groups">
+        <md-icon md-svg-src="svg/menu.svg"></md-icon>
+      </md-button>
+      <h2> Material Todo App</h2>
+    </md-toolbar>
+    <div flex layout="row" id="mainBody">
+      <md-content class="md-padding">
+        <form ng-submit="vm.addNewTask()">
+          <div layout layout-align-gt-sm="center center">
+            <md-input-container flex="85">
+              <label>Add New Task</label>
+              <input ng-model="vm.newTask" placeholder="New Task" min="1">
+            </md-input-container>
+            <md-input-container>
+               <md-button type="submit" class="md-fab" aria-label="Add todo items">
+                  <md-icon md-svg-src="svg/add.svg"></md-icon> 
+               </md-button>
+            </md-input-container>
+          </div>
+        </form>
+        
+        <div>
+          <div flex layout layout-align="end end" class="listHeader">
+            {{vm.remaining()}} of {{vm.tasks.length}} remaining.</span>
+          </div>
+          <ul>
+            <li ng-repeat="task in vm.tasks" ng-click="vm.updateTask(task)" style="outline: none;">
+              <md-checkbox ng-model="task.done" aria-label="Todo Checkbox">
+                {{task.text}}
+              </md-checkbox>
+            </li>
+          </ul>
+        </div>
+      </md-content>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
+		<script src="todo.module.js"></script>
+		<script src="tasks.service.js"></script>
+		<script src="utils.service.js"></script>
+		<script src="todo.controller.js"></script>
+	</body>
+</html>
