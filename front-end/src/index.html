@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html ng-app="ToDo">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
 		<link rel="icon" href="svg/menu.svg">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css">
-		<link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body ng-controller="ToDoCtrl as vm">
 	<md-toolbar layout="row" layout-align="center">
@@ -48,13 +48,6 @@
         </div>
       </md-content>
       </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
-		<script src="todo.module.js"></script>
-		<script src="tasks.service.js"></script>
-		<script src="utils.service.js"></script>
-		<script src="todo.controller.js"></script>
+		<script src="bundle.js"></script>
 	</body>
 </html>
